@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everwash site forms</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="mail.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="socialicons-btn">
+      <button class="custombtn" type="button" data-toggle="modal" data-target="#bookacallFormModal">
+        Book A Call
+      </button>
+      <a href="/testimonials" class="custombtn">Testimonials</a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookacallFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+    <div class="modal-dialog modal-lg" id="washownersForm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row" id="contactSalesForm">
+            <div class="col-lg-5">
+              <h2>Get in Touch with Sales</h2>
+              <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+              <div>
+                <p>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:sales@everwash.com">
+                    <span>sales@everwash.com</span>
+                  </a>
+                </p>
+                <p>
+                  <i class="fa fa-phone"></i>
+                  <a href="tel:8554927477">
+                    <span>(855)-492-7477</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div id="omnixModalHeader">
+                <div class="header-content">
+                  <button type="button" class="close d-lg-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fa fa-times"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div id="standard-form">
+                <img
+                  src="https://everwashpartners-dev.netlify.app/img/logos/EverWash_HorizontalLogo_andTag_RGB_Navy.png"
+                  alt="Activating unlimited car washes with an app" class="img-fluid" />
+                <p>
+                  Talk to a membership professional about how the EverWash platform can increase the overall
+                  profitability of your wash
+                </p>
+                <form id="bookacallPopup" name="Book A Call 2025" method="POST" action="/thank-you.html"
+                  data-netlify-recaptcha="true" data-netlify="true" data-netlify-honeypot="bot-field">
+                  <input type="hidden" name="Subject" data-email-subject="emailSubject"
+                    value="Book A Call 2025 Submission" />
+                  <input type="hidden" name="formName" value="Book A Call 2025" aria-hidden="true" />
+                  <div class="input-row">
+                    <div class="input-wrapper">
+                      <input name="name" id="name" class="form-control" type="text" required="required" placeholder=" "
+                        aria-label="Enter your first name" />
+                      <label for="name">First Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input name="last-name" id="lastName" class="form-control" type="text" required="required"
+                        placeholder=" " aria-label="Enter your last name" />
+                      <label for="lastNameInput">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="input-row">
+                    <div class="input-wrapper">
+                      <input name="email" id="email" class="form-control" type="email" required="required"
+                        placeholder=" " aria-label="Enter your email" />
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input name="phone" id="phone" class="form-control" type="tel" required="required"
+                        placeholder=" " />
+                      <label for="phone">Phone Number</label>
+                    </div>
+                  </div>
+                  <div class="input-row">
+                    <div class="input-wrapper">
+                      <input name="car-wash-name" id="carWashName" class="form-control" type="text" required="required"
+                        placeholder=" " aria-label="Enter your car wash name" />
+                      <label for="carWashName">Car Wash Name</label>
+                    </div>
+                    <select class="form-control form-select" name="wash-type" id="wash-type" required="required">
+                      <option value="" disabled="" selected="">
+                        Choose Wash Type
+                      </option>
+                      <option value="Tunnel">Tunnel</option>
+                      <option value="In-Bay Automatic (IBA)">In-Bay Automatic (IBA)</option>
+                      <option value="Self-Serve (Stand Alone)">Self-Serve (Stand Alone)</option>
+                    </select>
+                  </div>
+                  <div class="input-row">
+                    <select class="form-control form-select" name="car-wash-state" id="car-wash-state"
+                      required="required">
+                      <option value="" disabled="" selected="">Choose State</option>
+                      <option value="Alabama">Alabama</option>
+                      <option value="Alaska">Alaska</option>
+                      <option value="Arizona">Arizona</option>
+                      <option value="Arkansas">Arkansas</option>
+                      <option value="California">California</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Connecticut">Connecticut</option>
+                      <option value="Delaware">Delaware</option>
+                      <option value="District Of Columbia">District Of Columbia</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Hawaii">Hawaii</option>
+                      <option value="Idaho">Idaho</option>
+                      <option value="Illinois">Illinois</option>
+                      <option value="Indiana">Indiana</option>
+                      <option value="Iowa">Iowa</option>
+                      <option value="Kansas">Kansas</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Louisiana">Louisiana</option>
+                      <option value="Maine">Maine</option>
+                      <option value="Maryland">Maryland</option>
+                      <option value="Massachusetts">Massachusetts</option>
+                      <option value="Michigan">Michigan</option>
+                      <option value="Minnesota">Minnesota</option>
+                      <option value="Mississippi">Mississippi</option>
+                      <option value="Missouri">Missouri</option>
+                      <option value="Montana">Montana</option>
+                      <option value="Nebraska">Nebraska</option>
+                      <option value="Nevada">Nevada</option>
+                      <option value="New Hampshire">New Hampshire</option>
+                      <option value="New Jersey">New Jersey</option>
+                      <option value="New Mexico">New Mexico</option>
+                      <option value="New York">New York</option>
+                      <option value="North Carolina">North Carolina</option>
+                      <option value="North Dakota">North Dakota</option>
+                      <option value="Ohio">Ohio</option>
+                      <option value="Oklahoma">Oklahoma</option>
+                      <option value="Oregon">Oregon</option>
+                      <option value="Pennsylvania">Pennsylvania</option>
+                      <option value="Rhode Island">Rhode Island</option>
+                      <option value="South Carolina">South Carolina</option>
+                      <option value="South Dakota">South Dakota</option>
+                      <option value="Tennessee">Tennessee</option>
+                      <option value="Texas">Texas</option>
+                      <option value="Utah">Utah</option>
+                      <option value="Vermont">Vermont</option>
+                      <option value="Virginia">Virginia</option>
+                      <option value="Washington">Washington</option>
+                      <option value="West Virginia">West Virginia</option>
+                      <option value="Wisconsin">Wisconsin</option>
+                      <option value="Wyoming">Wyoming</option>
+                    </select>
+                    <div class="input-wrapper">
+                      <input name="car-wash-zipcode" id="carWashZipcode" class="form-control" type="number"
+                        required="required" value="" placeholder=" " aria-label="Enter your car wash zipcode" />
+                      <label for="carWashZipcode">Zip Code</label>
+                    </div>
+                  </div>
+                  <p class="disclaimer">
+                    * This form is specifically for Car Wash Owners who wish to contact EverWash about setting up a
+                    membership program at
+                    their location. If you are a current EverWash member looking for customer support, please contact
+                    our Member Support
+                    Team at support@everwash.com or call 215-618-8808 to speak with an agent.
+                  </p>
+                  <div data-netlify-recaptcha="true" style="margin-bottom: 15px;"></div>
+                  <div class="d-c">
+                    <button class="btn btn-accent btn-large" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("bookacallPopup").addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        let fname = document.getElementById("name").value.trim();
+        let lname = document.getElementById("lastName").value.trim();
+        let washemail = document.getElementById("email").value.trim();
+        let washphone = document.getElementById("phone").value.trim();
+        let carwashname = document.getElementById("carWashName").value.trim();
+        let washtype = document.getElementById("wash-type").value.trim();
+        let carwashstate = document.getElementById("car-wash-state").value.trim();
+        let carwashzip = document.getElementById("carWashZipcode").value.trim();
+
+        // console.log('fname', fname);
+        // console.log('lname', lname);
+        // console.log('washemail', washemail);
+        // console.log('washphone', washphone);
+        // console.log('carwashname', carwashname);
+        // console.log('washtype', washtype);
+        // console.log('carwashstate', carwashstate);
+        // console.log('carwashzip', carwashzip);
+
+        let formData = {
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }
+
+        await fetch("/.netlify/functions/form-handler", {
+          method: "POST",
+          body: JSON.stringify(formData)
+        }).then(response => response.json())
+          .then(data => console.log("Response:", JSON.parse(data)))
+          .catch(error => console.error("Error:", error));
+
+
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

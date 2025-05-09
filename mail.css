@@ -1,0 +1,667 @@
+form input,
+form select,
+form textarea {
+  background: var(--gray-100) !important;
+  border: none !important;
+  margin-bottom: 1.5rem;
+}
+form textarea {
+  margin-bottom: 5%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 5%;
+}
+/* #supportContactForm form textarea {
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 5%;
+} */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.input-group-append {
+  background-color: var(--gray-200);
+  padding: 0 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#contactSalesForm,
+#distributorsForm,
+#supportContactForm {
+  padding: 1.5rem 0;
+}
+
+#contactSalesForm a,
+#distributorsForm a {
+  color: var(--white);
+  text-decoration: underline;
+}
+form a {
+  color: var(--primary) !important;
+}
+#contactSalesForm .container > h2,
+#contactSalesForm .container > p,
+#distributorsForm .container > h2,
+#distributorsForm .container > p {
+  text-align: center;
+}
+
+#contactSalesForm h2,
+#contactSalesForm p,
+#distributorsForm h2,
+#supportContactForm h2 {
+  margin: 2%;
+}
+
+#contactSalesForm h5,
+#distributorsForm h5,
+#supportContactForm h5 {
+  margin-bottom: 1.5rem;
+}
+
+#contactSalesForm .col-lg-5 p,
+#distributorsForm .col-lg-5 p {
+  font-size: 0.85rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+#contactSalesForm .col-lg-5,
+#distributorsForm .col-lg-5 {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#salesBody #contactSalesForm .col-lg-5,
+#distributorsForm .col-lg-5 {
+  padding: 5% 7%;
+}
+
+#salesBody #contactSalesForm .col-lg-7,
+#distributorsForm .col-lg-7 {
+  padding: 5% 10%;
+}
+
+#contactSalesForm .row,
+#distributorsForm .row {
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+#contactSalesForm .col-lg-5 i,
+#distributorsForm .col-lg-5 i {
+  color: var(--highlight);
+  margin-right: 20px;
+}
+
+#contactSalesForm .disclaimer,
+#distributorsForm .disclaimer,
+#supportContactForm .disclaimer {
+  margin: 2rem 0;
+  text-align: left;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-container img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+#distributorFormModal .col-lg-5 {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#omnixModal .modal-content,
+#omnixModal .modal-body,
+#analyticsModal .modal-content,
+#analyticsModal .modal-body,
+#distributorFormModal .modal-content,
+#distributorFormModal .modal-body {
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+#omnixModal .modal-body .row,
+#analyticsModal .modal-body .row,
+#distributorFormModal .modal-body .row {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#omnixModal #contactSalesForm,
+#analyticsModal #contactSalesForm,
+#distributorFormModal #contactSalesForm {
+  padding: 0;
+}
+
+#omnixModal #contactSalesForm .col-lg-5,
+#analyticsModal #contactSalesForm .col-lg-5,
+#distributorFormModal #contactSalesForm .col-lg-5 {
+  padding: 5% 7%;
+}
+
+#omnixModal #contactSalesForm .col-lg-7,
+#analyticsModal #contactSalesForm .col-lg-7,
+#distributorFormModal #contactSalesForm .col-lg-7 {
+  padding: 5% 7%;
+  background: var(--white);
+}
+
+#omnixModal .btn,
+#analyticsModal .btn,
+#distributorFormModal .btn {
+  background: var(--primary);
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  letter-spacing: 0.05rem;
+  color: var(--white);
+}
+
+#omnixModal .btn:hover,
+#analyticsModal .btn:hover,
+#distributorFormModal .btn:hover {
+  background: var(--accent);
+}
+
+#omnixModal button.close,
+#analyticsModal button.close,
+#distributorFormModal button.close {
+  background: none;
+  padding: 0;
+  opacity: 1;
+}
+#omnixModal button.close i,
+#analyticsModal button.close i,
+#distributorFormModal button.close i {
+  font-size: 1.8rem;
+}
+#omnixModal .col-lg-5 button.close i,
+#analyticsModal.col-lg-5 button.close i,
+#distributorFormModal .col-lg-5 button.close i {
+  color: var(--white);
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#omnixModal a,
+#analyticsModal a,
+#distributorFormModal a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+#omnixModal #omnixModalHeader,
+#analyticsModal #analyticsModalHeader,
+#distributorFormModal #omnixModalHeader {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: start;
+}
+
+#omnixModal p,
+#analyticsModal p,
+#distributorFormModal p {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+#distributorFormModal img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+#omnixModal img,
+#analyticsModal img {
+  width: 80px;
+  margin-bottom: 2rem;
+}
+#analyticsModal img {
+  width: 150px;
+}
+#omnixModal .contact-info p,
+#analyticsModal .contact-info p,
+#distributorFormModal .contact-info p {
+  display: flex;
+  align-items: center;
+}
+/* /////////////////////////// */
+/* B2B LEAD FORMS */
+
+.partnerModal .modal-content,
+.partnerModal .modal-body {
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+.partnerModal .modal-body .row {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.partnerModal #contactSalesForm {
+  padding: 0;
+}
+
+.partnerModal #contactSalesForm .col-lg-5 {
+  padding: 5% 7%;
+}
+
+.partnerModal #contactSalesForm .col-lg-7 {
+  padding: 5% 7%;
+  background: var(--white);
+}
+
+.partnerModal .btn {
+  background: var(--primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+}
+
+.partnerModal .btn:hover {
+  background: var(--secondary);
+}
+
+.partnerModal button.close {
+  background: none;
+  padding: 0;
+}
+
+.partnerModal button.close i {
+  color: var(--black);
+}
+
+.partnerModal #partnerModalHeader {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: start;
+}
+
+.partnerModal p {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.partnerModal img {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.partnerModal .form-control {
+  margin-bottom: 1.2rem;
+}
+
+.partnerModal h5 {
+  margin-bottom: 1rem !important;
+}
+
+.partnerModal p {
+  margin-bottom: 4% !important;
+  margin-left: 0 !important;
+}
+
+.partnerModal a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* DISTRIBUTOR FORM */
+#formConfirmation .modal-content {
+  max-width: 600px;
+  margin: auto;
+}
+#formConfirmation .modal-body {
+  text-align: center;
+  padding: 7%;
+}
+
+#formConfirmation p {
+  color: var(--gray-600);
+  font-size: 1.1rem;
+}
+
+#formConfirmation .modal-body i {
+  font-size: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+#formConfirmation button {
+  text-align: left;
+  padding: 5% 10%;
+  font-size: 2rem;
+}
+.bot-field {
+  visibility: hidden;
+  height: 5px;
+}
+.close {
+  border: none;
+}
+/* Tablet */
+@media (max-width: 768px) {
+  #supportContactForm {
+    margin-top: 15%;
+  }
+  #membersMain #supportContactForm {
+    margin-top: 0;
+  }
+  #supportContactForm .col-lg-12 .d-c {
+    flex-direction: column;
+  }
+}
+
+/* Large Phone */
+@media (max-width: 425px) {
+  #supportContactForm {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+}
+
+/* REDESIGN 10/2022 */
+#supportContactForm {
+  text-align: center;
+  background-color: var(--variant-periwinkle-03);
+  padding-top: max(3rem, 5%);
+  padding-bottom: max(5rem, 4%);
+}
+#supportContactForm a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--gray-700) !important;
+  text-decoration-thickness: 1px;
+}
+#supportContactForm .d-c p {
+  margin: 0.5rem 1rem;
+}
+
+#supportContactForm .d-c {
+  margin-bottom: 1.75rem;
+}
+
+#supportContactForm .container form {
+  max-width: 600px;
+  margin: auto;
+}
+/* REDESIGNED SALES FORM */
+#partnerFormCol {
+  text-align: center;
+}
+#partnerFormCol p {
+  margin-bottom: 2rem;
+}
+#partnerFormCol img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+#partnerFormCol .form-container {
+  padding: 4rem 5rem;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 18px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+}
+#partnerFormCol .form-container .disclaimer {
+  margin-bottom: 2rem;
+}
+#partnerFormCol input,
+#partnerFormCol select,
+#partnerFormCol textarea {
+  border: 1px solid var(--gray-200);
+}
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.input-wrapper label {
+  color: var(--gray-600);
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
+  text-align: left !important;
+  transform-origin: 0px 0px;
+  transition: transform 100ms;
+}
+
+.input-wrapper:focus-within label {
+  transform: translateY(-10px) scale(0.9);
+}
+.input-wrapper input,
+.input-wrapper textarea {
+  font-size: 1rem;
+  padding-top: 2.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.1rem;
+}
+
+.input-wrapper textarea {
+  padding-top: 1.7rem;
+}
+
+.input-wrapper input:not(:placeholder-shown) + label,
+.input-wrapper textarea:not(:placeholder-shown) + label {
+  transform: translateY(-8px) scale(0.75);
+}
+
+form select {
+  padding: 1rem !important;
+  height: auto !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(var(--rgb-gray-100), 0.5),
+      rgba(var(--rgb-gray-100), 0.5)
+    ),
+    url("/img/caret-down-solid.svg") !important;
+  background-position: right 10px center !important; /* Center the image */
+  background-repeat: no-repeat !important; /* Do not repeat the image */
+  background-size: 10px !important; /* Resize the background image to cover the entire container */
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+#memberSupportForm .input-group .input-group-append {
+  width: 2rem;
+  padding: 0;
+}
+
+#memberSupportForm .input-group .input-wrapper {
+  width: calc(100% - 2rem);
+}
+
+#memberSupportForm .input-group #email {
+  margin-bottom: 0;
+}
+
+/*Sales Form*/
+#contactSales .form-container {
+  padding: 3rem 4rem;
+  box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+  #contactSales .row > div:first-child {
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .input-row {
+    display: block;
+  }
+
+  #contactSales .row > div:first-child {
+    padding-right: 15px;
+  }
+  #contactSales h1 {
+    margin-top: 0;
+  }
+  #contactSales h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #partnerCTA .container {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  #partnerCTA .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #partnerFormCol {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #partnerFormCol .form-container {
+    border-radius: 0;
+    padding: 3rem 1.1rem;
+  }
+}
+/* Ebook Form */
+#ebookMain .form-container {
+  padding: 3rem;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 18px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 470px;
+}
+
+@media (max-width: 992px) {
+  #ebookHero .row > div {
+    padding: 0 !important;
+  }
+  #ebookHero .form-container {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  #ebookHero .row > div:first-child {
+    z-index: 1;
+  }
+  #ebookHero .form-container {
+    margin-top: -60px;
+    padding-top: 70px;
+    border-radius: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* omniX Sales Navigator Case Study */
+#omnixCaseStudyMain .form-container {
+  padding: 3rem;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 18px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 550px;
+}
+
+@media (max-width: 992px) {
+  #omnixCaseStudyHero .row > div {
+    padding: 0 !important;
+  }
+  #omnixCaseStudyHero .form-container {
+    max-width: 100% !important;
+  }  
+}
+@media (max-width: 576px) {
+  #omnixCaseStudyHero {
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+  }
+  #omnixCaseStudyHero .row > div:first-child {
+    z-index: 1;
+  }
+  #omnixCaseStudyHero .form-container {
+
+    padding-top: 70px;
+    border-radius: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* Popup Lead Form */
+.popup-lead-form .popup-form-heading {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--font-family-body);
+  font-weight: 600;
+}
+.popup-lead-form .modal-dialog {
+  /* max-width: 800px; */
+}
+.popup-lead-form .modal-content {
+  padding: 2rem 3rem !important;
+}
+.popup-lead-form .disclaimer {
+  font-size: 0.65rem;
+}
+
+.popup-lead-form img {
+  width: 150px !important;
+  margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .popup-lead-form .form-container {
+    padding: 2rem 1rem !important;
+  }
+  .popup-lead-form .form-container .close i {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .popup-lead-form .popup-form-heading {
+
+    margin-top: 3rem;
+
+  }
+}
