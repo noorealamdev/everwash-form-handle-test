@@ -66,8 +66,15 @@
                   Talk to a membership professional about how the EverWash platform can increase the overall
                   profitability of your wash
                 </p>
-                <form id="bookacallPopup" name="Book A Call 2025" method="POST" action="/thank-you.html"
-                  data-netlify-recaptcha="true" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form 
+                  id="bookacallPopup" 
+                  name="Book A Call 2025" 
+                  method="POST" 
+                  action="/thank-you.html"
+                  data-netlify-recaptcha="true"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
                   <input type="hidden" name="Subject" data-email-subject="emailSubject"
                     value="Book A Call 2025 Submission" />
                   <input type="hidden" name="formName" value="Book A Call 2025" aria-hidden="true" />
@@ -194,11 +201,14 @@
     </div>
   </div>
 
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("bookacallPopup").addEventListener("submit", async function (event) {
-        event.preventDefault();
 
+      const form = document.getElementById('bookacallPopup222');
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
         let fname = document.getElementById("name").value.trim();
         let lname = document.getElementById("lastName").value.trim();
         let washemail = document.getElementById("email").value.trim();
@@ -207,6 +217,7 @@
         let washtype = document.getElementById("wash-type").value.trim();
         let carwashstate = document.getElementById("car-wash-state").value.trim();
         let carwashzip = document.getElementById("carWashZipcode").value.trim();
+
 
         // console.log('fname', fname);
         // console.log('lname', lname);
@@ -217,7 +228,7 @@
         // console.log('carwashstate', carwashstate);
         // console.log('carwashzip', carwashzip);
 
-        let formData = {
+        let formDataExternal = {
           fname: fname,
           lname: lname,
           washemail: washemail,
@@ -228,16 +239,31 @@
           carwashzip: carwashzip,
         }
 
-        await fetch("/.netlify/functions/form-handler", {
-          method: "POST",
-          body: JSON.stringify(formData)
-        }).then(response => response.json())
-          .then(data => console.log("Response:", JSON.parse(data)))
-          .catch(error => console.error("Error:", error));
+        const formData = new FormData(this);
+        const formObject = Object.fromEntries(formData.entries())
+        // fetch("/", {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //   body: new URLSearchParams(formData).toString()
+        // })
+        //   .then(response => console.log('responseData', responseData))
+        //   .catch(error => alert(error));
 
+        function sendFormDataExternalApi() {
+          fetch("/.netlify/functions/form-handler", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          }).then(response => response.json())
+            .then(data => {
+              console.log("Response:", data)
+            })
+            .catch(error => console.error("Error:", error));
+        }
+
+        sendFormDataExternalApi()
 
       });
-
     });
   </script>
 
