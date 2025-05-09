@@ -1,6 +1,7 @@
 exports.handler = async (event) => {
-    const payload = JSON.parse(event.body);
-    console.log("New Submission:", payloadData.data);
+    const formData = JSON.parse(event.body).payload;
+    const { data } = formData;
+    console.log("New Submission:", data);
     
     // You can process the data here (save to DB, send emails, etc.)
 
