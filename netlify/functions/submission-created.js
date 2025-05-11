@@ -21,9 +21,6 @@ exports.handler = async (event) => {
   // Now process the data here (save to DB, send emails, APIs etc.)
   await fetch('https://pixiwebdesign.com/api.php', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
     body: JSON.stringify(postData),
   })
     .then(response => response.json())
