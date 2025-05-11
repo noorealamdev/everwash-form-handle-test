@@ -24,7 +24,10 @@ exports.handler = async (event) => {
     body: JSON.stringify(postData),
   })
     .then(responseData => {
-      console.log('Success:', responseData);
+      if (responseData.status === 200) {
+        console.log('Success:', responseData);
+      }
+      
     })
     .catch(error => {
       console.error('Error:', error);
