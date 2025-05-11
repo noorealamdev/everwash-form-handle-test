@@ -1,8 +1,21 @@
 // Capture verified submission form data and send it to multiple locations 
 exports.handler = async (event) => {
   const formData = JSON.parse(event.body).payload;
-  const { data } = formData;
+  //const { data } = formData;
   //console.log("New Submission:", data);
+  const data = {
+    firstName: formData.firstName,
+    lastName: formData.lastName,
+    email: formData.email,
+    phone: formData.phone,
+    carWashName: formData.carWashName,
+    washType: formData.washType,
+    carWashState: formData.carWashState,
+    carWashZipcode: formData.carWashZipcode,
+  }
+  
+  console.log("New Submission:", data);
+  
 
   // Now process the data here (save to DB, send emails, APIs etc.)
   await fetch('https://pixiwebdesign.com/api.php', {
