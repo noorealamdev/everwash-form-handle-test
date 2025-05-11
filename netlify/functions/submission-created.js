@@ -1,20 +1,20 @@
 // Capture verified submission form data and send it to multiple locations 
 exports.handler = async (event) => {
   const formData = JSON.parse(event.body).payload;
-  //const { data } = formData;
+  const { data } = formData;
   //console.log("New Submission:", data);
-  const data = {
-    firstName: formData.firstName,
-    lastName: formData.lastName,
-    email: formData.email,
-    phone: formData.phone,
-    carWashName: formData.carWashName,
-    washType: formData.washType,
-    carWashState: formData.carWashState,
-    carWashZipcode: formData.carWashZipcode,
+  const postData = {
+    firstName: data.firstName,
+    lastName: data.lastName,
+    email: data.email,
+    phone: data.phone,
+    carWashName: data.carWashName,
+    washType: data.washType,
+    carWashState: data.carWashState,
+    carWashZipcode: data.carWashZipcode,
   }
   
-  console.log("New Submission:", data);
+  console.log("New Submission:", postData);
   
 
   // Now process the data here (save to DB, send emails, APIs etc.)
