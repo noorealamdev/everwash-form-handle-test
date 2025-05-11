@@ -19,23 +19,23 @@ exports.handler = async (event) => {
   
 
   // Now process the data here (save to DB, send emails, APIs etc.)
-  // await fetch('https://pixiwebdesign.com/api.php', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify(postData),
-  // })
-  //   .then(response => response.json())
-  //   .then(responseData => {
-  //     console.log('Success:', responseData);
-  //   })
-  //   .catch(error => {
-  //     console.error('Error:', error);
-  //   });
+  await fetch('https://pixiwebdesign.com/api.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(postData),
+  })
+    .then(response => response.json())
+    .then(responseData => {
+      console.log('Success:', responseData);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
 
-  // return {
-  //   statusCode: 200,
-  //   body: JSON.stringify({ message: "Submission received!" }),
-  // };
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Submission received!" }),
+  };
 };
