@@ -41,10 +41,5 @@ exports.handler = async (event) => {
     })
     .catch(error => {
       console.error('Error:', error);
-    });
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: "Submission received!" }),
-  };
+  });
 };
