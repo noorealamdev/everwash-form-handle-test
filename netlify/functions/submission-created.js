@@ -2,7 +2,7 @@
 exports.handler = async (event) => {
   const formData = JSON.parse(event.body).payload;
   const { data } = formData;
-  console.log("New Submission:", data);
+  //console.log("New Submission:", data);
 
   // Now process the data here (save to DB, send emails, APIs etc.)
   fetch('https://pixiwebdesign.com/api.php', {
