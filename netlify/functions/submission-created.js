@@ -22,12 +22,9 @@ exports.handler = async (event) => {
   await fetch('https://pixiwebdesign.com/api.php', {
     method: 'POST',
     body: JSON.stringify(postData),
-  })
-    .then(responseData => {
-      if (responseData.status === 200) {
-        console.log('Success:', responseData);
-      }
-      
+  }).then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
     })
     .catch(error => {
       console.error('Error:', error);
