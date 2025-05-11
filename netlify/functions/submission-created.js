@@ -4,6 +4,7 @@ exports.handler = async (event) => {
   const { data } = formData;
   //console.log("New Submission:", data);
   const postData = {
+    formName = data.formName,
     firstName: data.firstName,
     lastName: data.lastName,
     email: data.email,
