@@ -5,7 +5,7 @@ exports.handler = async (event) => {
   console.log("New Submission:", data);
 
   // Now process the data here (save to DB, send emails, APIs etc.)
-  fetch('http://localhost:8000/api.php', {
+  fetch('https://pixiwebdesign.com/api.php', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
