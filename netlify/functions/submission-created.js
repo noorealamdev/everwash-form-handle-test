@@ -24,7 +24,7 @@ exports.handler = async (event) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: postData,
+    body: JSON.stringify(postData),
   })
     .then(response => response.json())
     .then(responseData => {
