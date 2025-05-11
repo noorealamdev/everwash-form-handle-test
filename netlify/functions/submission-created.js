@@ -15,7 +15,7 @@ exports.handler = async (event) => {
     carWashZipcode: data.carWashZipcode,
   }
   
-  console.log("New Submission:", postData);
+  console.log("New Submission:", JSON.stringify(postData));
   
 
   // Now process the data here (save to DB, send emails, APIs etc.)
