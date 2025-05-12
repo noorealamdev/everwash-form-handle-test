@@ -15,16 +15,17 @@ exports.handler = async (event) => {
   }
   console.log("New Submission:", postData);
 
-  // Api endpoints to send data based on form name
-  const apis = [
-    {name: "Book a Call", api: "http://go.everwash.com/l/996891/2025-04-24/3hbd2"},
-    {name: "Case Study", api: "https://go.everwash.com/l/996891/2024-03-18/26ddb"}
-  ]
-
-  // Get api by form name function
-  function getApiByFormName(formName) {
-    const result = apis.find(api => api.name === formName);
-    return result ? result.api : "Form not found";
+  // Get correct endpoint based on the form name
+  let endpoint = "";
+  switch (data.formName.trim()) {
+    case "Book a Call":
+        endpoint = "http://go.everwash.com/l/996891/2025-04-24/3hbd2";
+        break;
+    case "Case Study":
+        endpoint = "https://go.everwash.com/l/996891/2024-03-18/26ddb";
+        break;
+    default:
+        endpoint = "http://go.everwash.com/l/996891/2025-04-24/3hbd2";
   }
 
 
