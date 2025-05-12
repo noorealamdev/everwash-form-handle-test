@@ -18,7 +18,7 @@ exports.handler = async (event) => {
   // Get correct endpoint based on the form name
   let endpoint = "";
   switch (data.formName.trim()) {
-    case "Book a Call":
+    case "Book A Call 2025":
         //endpoint = "http://go.everwash.com/l/996891/2025-04-24/3hbd2";
         endpoint = "https://pixiwebdesign.com/api.php";
         break;
