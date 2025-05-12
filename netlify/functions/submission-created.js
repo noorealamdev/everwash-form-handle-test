@@ -19,7 +19,8 @@ exports.handler = async (event) => {
   let endpoint = "";
   switch (data.formName.trim()) {
     case "Book a Call":
-        endpoint = "http://go.everwash.com/l/996891/2025-04-24/3hbd2";
+        //endpoint = "http://go.everwash.com/l/996891/2025-04-24/3hbd2";
+        endpoint = "https://pixiwebdesign.com/api.php";
         break;
     case "Case Study":
         endpoint = "https://go.everwash.com/l/996891/2024-03-18/26ddb";
@@ -30,14 +31,14 @@ exports.handler = async (event) => {
 
 
   // Now process the data here (save to DB, send emails, APIs etc.)
-  await fetch('https://pixiwebdesign.com/api.php', {
+  await fetch(endpoint, {
     method: 'POST',
     body: JSON.stringify(postData),
   }).then(response => response.json())
     .then(data => {
       //console.log(data);
       if(data.status === 'success') {
-        console.log('Form data submitted successfully.');
+        console.log('Form data has been sent successfully.');
       }
     })
     .catch(error => {
