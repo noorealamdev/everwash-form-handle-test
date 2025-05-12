@@ -14,7 +14,21 @@ exports.handler = async (event) => {
     carWashZipcode: data.carWashZipcode,
   }
   console.log("New Submission:", postData);
-
+  /*
+  Output data
+  New Submission: {
+    formName: 'Book A Call 2025',
+    firstName: 'Desirae',
+    lastName: 'Mooney',
+    email: 'lygurisas@mailinator.com',
+    phone: '18824139856',
+    carWashName: 'Breanna Valentine',
+    washType: 'Tunnel',
+    carWashState: 'Iowa',
+    carWashZipcode: '65776'
+  }
+*/
+  
   // Get correct endpoint based on the form name
   let endpoint = "";
   switch (data.formName.trim()) {
